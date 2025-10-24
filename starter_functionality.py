@@ -21,5 +21,13 @@ def getTimeInBinary():
     secondsInBinary = convert(datetime.datetime.now().minute)
     return(hourInBinary,minutesInBinary,secondsInBinary)
 
-
-
+def drawCircles(screen,color,hb,mb,sb):
+    import pygame
+    for i in range (5):
+        pygame.draw.circle(screen,color,[90,i*50-20],20,int(hb[i]))
+        pygame.draw.circle(screen,color,[210,i*50-20],20,int(mb[i]))
+        pygame.draw.circle(screen,color,[330,i*50-20],20,int(sb[i]))
+        if (i >= 3):
+            pygame.draw.circle(screen,color,[30,i*50-20],20,int(hb[i]))
+            pygame.draw.circle(screen,color,[150,i*50-20],20,int(mb[i]))
+            pygame.draw.circle(screen,color,[270,i*50-20],20,int(sb[i]))

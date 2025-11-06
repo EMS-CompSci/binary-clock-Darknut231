@@ -18,7 +18,7 @@ while True:
          exit()
    screen.fill((0,0,0))
    tenhb,hb,tenmb,mb,tensb,sb = getTimeInBinary()
-   print(tenhb,hb,mb,tenmb,sb,tensb)
+   print(tenhb,hb,tenmb,mb,tensb,sb)
    drawCircles(screen,color,tenhb,tenmb,tensb)
    oneCircles(screen,color,hb,mb,sb)
    pygame.display.update()
